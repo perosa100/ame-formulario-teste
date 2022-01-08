@@ -33,7 +33,6 @@ export class App extends Component {
     this.setState({
       contact
     })
-    console.log(this.state)
   }
 
   sendContact(contact) {
