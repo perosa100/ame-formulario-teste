@@ -46,11 +46,23 @@ export class ContactForm extends React.Component {
 
   fieldChange(event) {
     let target = event.target
-    let value = target.type === 'checkbox' ? target.checked : target.value
+    /*  let value = target.type === 'checkbox' ? target.checked : target.value
 
     this.setState({
       [target]: value
+    }) */
+
+    let value = target.type === 'checkbox' ? target.checked : target.value
+
+    this.setState({
+      [event.target]: event.target.value
     })
+
+    this.props.data[target.name] = value
+
+    // console.log(target,value)
+    // this.props.data[target.name] = value
+    // console.log(this.props.data[target.name])
   }
 
   isSelected(key, option) {
