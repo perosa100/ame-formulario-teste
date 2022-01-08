@@ -1,0 +1,4 @@
+{
+  "jest.debugMode": true,
+  "jest.debugCodeLens.showWhenTestStateIn": ["fail", "pass", "unknown"]
+}
